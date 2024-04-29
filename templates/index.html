@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go Chatbot - Tests</title>
+  </head>
+
+  <body>
+    <header>Chat with our Bot</header>
+    <main>
+      <textarea id="chatbox" cols="110" rows="30" readonly></textarea><br />
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Say something..."
+        autofocus
+      />
+      <button onclick="sendMessage()">Send</button>
+      <br />
+      <br />
+      <button onclick="localStorage.clear(); alert('Local storage cleared!');">
+        Clear Local Storage
+      </button>
+    </main>
+    <footer>&copy; 2024 Our Company</footer>
+
+    <script src="static/js/script.js"></script>
+  </body>
+</html>
